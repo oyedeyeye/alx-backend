@@ -1,4 +1,4 @@
-#!/usr/bin/env pyhton3
+#!/usr/bin/env python3
 """
 Implement a method named get_page that takes two integer arguments page with
 default value 1 and page_size with default value 10
