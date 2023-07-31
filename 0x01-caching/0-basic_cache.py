@@ -17,10 +17,9 @@ class BasicCache(BaseCaching):
             self.cache_data - dictionary from the parent class BaseCaching
     """
     def put(self, key, item):
-        """update the dictionary"""
-        if key is None and item is None:
-            return
-        self.cache_data[key] = item
+        """update the cache"""
+        if key is not None and item is not None:
+            self.cache_data[key] = item
 
     def get(self, key):
         """return the value in self.cache_data linked to key."""
