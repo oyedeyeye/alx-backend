@@ -42,6 +42,6 @@ class Server:
         idx = index_range(page, page_size)
         data = self.dataset()
 
-        if start > len(data):
+        if idx[0] > len(data):
             return []
         return data[idx[0]: idx[1]]
