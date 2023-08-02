@@ -5,6 +5,7 @@
 from flask import Flask, render_template
 from flask_babel import Babel
 
+
 class Config:
     """ Flask Babel configuration Settings """
     LANGUAGES = ['en', 'fr']
