@@ -3,7 +3,7 @@
 
 
 from flask import Flask, render_template, request
-from flask_babel import Babel
+from flask_babel import Babel, _
 
 
 class Config:
@@ -28,7 +28,7 @@ def get_locale():
 @app.route('/')
 def get_index() -> str:
     """Basic route"""
-    return render_template('2-index.html')
+    return render_template('3-index.html')
 
 
 if __name__ == '__main__':
